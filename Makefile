@@ -72,7 +72,7 @@ build/llvm.BUILT:
 		-DLLVM_INCLUDE_UTILS=OFF \
 		-DLLVM_INCLUDE_BENCHMARKS=OFF \
 		-DLLVM_INCLUDE_EXAMPLES=OFF \
-		-DLLVM_TARGETS_TO_BUILD=WebAssembly \
+		-DLLVM_TARGETS_TO_BUILD="X86;WebAssembly" \
 		-DLLVM_DEFAULT_TARGET_TRIPLE=wasm32-wasi \
 		-DLLVM_ENABLE_PROJECTS="lld;clang;clang-tools-extra" \
 		$(if $(patsubst 9,,$(CLANG_VERSION)), \
